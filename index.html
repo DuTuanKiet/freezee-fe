@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freezé - Trang Chủ</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="site-body">
+    <!-- Ice Cream Icons Animation -->
+    <div class="ice-cream-field">
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 10%; left: 5%; animation-delay: 0s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 20%; left: 20%; animation-delay: 1s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 30%; left: 40%; animation-delay: 2s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 50%; left: 10%; animation-delay: 3s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 60%; left: 70%; animation-delay: 4s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 75%; left: 30%; animation-delay: 5s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 80%; left: 80%; animation-delay: 6s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 90%; left: 50%; animation-delay: 7s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 95%; left: 25%; animation-delay: 8s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 40%; left: 85%; animation-delay: 9s"
+      ></i>
+    </div>
+
+    <!-- Snowfall Effect -->
+    <div class="snowflake">❆</div>
+    <div class="snowflake" style="left: 5%">❄</div>
+    <div class="snowflake" style="left: 15%">❅</div>
+    <div class="snowflake" style="left: 25%">❆</div>
+    <div class="snowflake" style="left: 40%">❄</div>
+    <div class="snowflake" style="left: 55%">❅</div>
+    <div class="snowflake" style="left: 70%">❆</div>
+    <div class="snowflake" style="left: 85%">❄</div>
+
+    <!-- Background Music -->
+    <audio
+      id="bg-music"
+      src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">Freezé</h1>
+        <nav class="site-nav">
+          <a href="./index.html" class="nav-link">Trang Chủ</a>
+          <a href="./gioithieu.html" class="nav-link">Giới Thiệu</a>
+          <a href="./sanpham.html" class="nav-link">Sản Phẩm</a>
+          <a href="./tintuc.html" class="nav-link">Tin Tức</a>
+          <a href="./dangnhap.html" class="nav-link">Đăng Nhập</a>
+          <a href="./dangky.html" class="nav-link">Đăng Ký</a>
+          <a href="./lienhe.html" class="nav-link">Liên Hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <canvas id="snow"></canvas>
+
+    <!-- Product Section -->
+    <section class="product-section">
+      <p
+        style="
+          text-align: center;
+          font-size: 3em;
+          color: #333;
+          margin-bottom: 20px;
+          padding: 10px;
+          border-radius: 8px;
+          font-family: 'Dancing Script', cursive;
+          font-style: italic;
+          font-weight: bold;
+          line-height: 1.5;
+        "
+      >
+        <strong>Nơi vị ngon bắt đầu và không bao giờ kết thúc !</strong>
+      </p>
+      <div class="product-card">
+        <h3 class="product-title"><strong>Sữa chua là gì?</strong></h3>
+        <img
+          class="product-image"
+          src="../assets/imageProduct/yogurt.jpg"
+          alt="Sữa chua và trái cây"
+        />
+        <p class="product-desc">
+          Sữa chua là một thực phẩm dưỡng chất cao và tốt cho sức khỏe. Sữa chua
+          có vị chua nhẹ, dễ tiêu hóa, bổ sung lợi khuẩn cho hệ tiêu hóa. Đây
+          chính là lý do vì sao nó trở thành món ăn ưa thích của nhiều người ở
+          mọi lứa tuổi. Chúng tôi tin rằng đây là sự lựa chọn tuyệt vời cho sức
+          khỏe gia đình bạn. Ngoài ra, sữa chua còn là nguồn cung cấp canxi,
+          vitamin D và protein rất tốt. Hãy thưởng thức một ly sữa chua mỗi ngày
+          để có một hệ tiêu hóa khỏe mạnh và cơ thể tràn đầy năng lượng. Xem
+          thêm tại
+          <a href="#" class="product-link">Xem chi tiết</a>
+          .
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-title">
+          <strong>Sữa Chua Làm Nhà</strong>
+        </h3>
+        <img
+          class="product-image"
+          src="../assets/imageProduct/ypgurt-nhalam.jpg"
+          alt="Video hướng dẫn sữa chua"
+        />
+        <p class="product-desc">
+          Bạn luôn muốn chuẩn bị món sữa chua tại gia? Trong đoạn video dưới
+          đây, chúng tôi sẽ cho các bạn xem các bước cơ bản và cách thành viên
+          trong đại gia đình Yêu Sữa Tươi đã thực hiện như thế nào. Với các
+          nguyên liệu đơn giản và dễ kiếm, bạn hoàn toàn có thể tự tay làm nên
+          món sữa chua tuyệt vời này. Không chỉ là món ăn bổ dưỡng mà còn là cơ
+          hội để kết nối gia đình qua những giây phút làm bếp cùng nhau. Cùng
+          xem video hướng dẫn và chia sẻ cảm nhận nhé!
+          <a href="#" class="product-link">Xem chi tiết</a>
+        </p>
+      </div>
+
+      <div class="product-card">
+        <h3 class="product-title">
+          <strong>Sữa Chua Không Đường</strong>
+        </h3>
+        <img
+          class="product-image"
+          src="../assets/imageProduct/yogurt-no-sg.jpg"
+          alt="Video hướng dẫn sữa chua"
+        />
+        <p class="product-desc">
+          Sữa chua không đường là một lựa chọn tuyệt vời cho những ai muốn giảm
+          lượng đường trong chế độ ăn uống. Với hương vị tự nhiên và độ mịn
+          màng, sữa chua không đường vẫn giữ được tất cả các lợi ích dinh dưỡng
+          của sữa chua truyền thống. Đây là món ăn lý tưởng cho những ai đang
+          theo dõi cân nặng hoặc muốn duy trì một lối sống lành mạnh. Hãy thử
+          ngay hôm nay để cảm nhận sự khác biệt!
+          <a href="#" class="product-link">Xem chi tiết</a>
+        </p>
+
+        <h3 class="product-title">
+          <strong>Nguyên liệu làm sữa chua không đường:</strong>
+        </h3>
+        <ol class="product-desc">
+          <li>
+            1 lít sữa tươi tiệt trùng không đường (hoặc có thể thay thế bằng sữa
+            đậu nành hoặc sữa tươi khác như Vinamilk, TH True Milk,...)
+          </li>
+          <li>1 hộp sữa chua không đường làm men cái</li>
+        </ol>
+
+        <h3 class="product-title">
+          <strong>Các bước thực hiện:</strong>
+        </h3>
+        <ol class="product-desc">
+          <li>Đun sôi sữa rồi để nguội đến nhiệt độ ấm (khoảng 40-45 độ C)</li>
+          <li>Cho sữa chua cái vào, khuấy đều</li>
+          <li>Ủ hỗn hợp trong vòng 6 đến 8 tiếng</li>
+          <li>Để nguội và cho vào tủ lạnh trước khi dùng</li>
+        </ol>
+      </div>
+
+      <div class="product-actions">
+        <label>
+          Số lượng
+          <input type="number" min="1" max="100" class="input-qty" />
+        </label>
+        <button class="btn btn-order">Đặt hàng ngay</button>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-comment-dots"></i>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      © 2025 Bản quyền thuộc về FreezéVN.
+      <a href="#">Facebook</a>
+      |
+      <a href="#">Twitter</a>
+      |
+      <a href="#">Pinterest</a>
+      |
+      <a href="#">Về Đầu Trang</a>
+    </footer>
+  </body>
+
+  <!-- Đoạn script giúp Snowfall Effect -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const snowContainer = document.createElement("div");
+      snowContainer.classList.add("snow-container");
+      document.body.appendChild(snowContainer);
+
+      for (let i = 0; i < 60; i++) {
+        let snowflake = document.createElement("span");
+        snowflake.className = "snowflake";
+        snowflake.textContent = "❄";
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+        snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+        snowflake.style.opacity = Math.random();
+        snowContainer.appendChild(snowflake);
+      }
+    });
+
+    window.addEventListener("click", () => {
+      const music = document.getElementById("bg-music");
+      music.muted = false;
+      music.play();
+    });
+
+    const canvas = document.getElementById("snow");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const snowflakes = Array.from({ length: 200 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 4 + 1,
+      d: Math.random() * 0.5 + 0.5,
+    }));
+    function drawSnowflakes() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      ctx.beginPath();
+      snowflakes.forEach((flake) => {
+        ctx.moveTo(flake.x, flake.y);
+        ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2, true);
+      });
+      ctx.fill();
+      moveSnowflakes();
+    }
+    function moveSnowflakes() {
+      snowflakes.forEach((flake) => {
+        flake.y += flake.d;
+        if (flake.y > canvas.height) {
+          flake.y = 0;
+          flake.x = Math.random() * canvas.width;
+        }
+      });
+    }
+    setInterval(drawSnowflakes, 25);
+  </script>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freezé - Sản Phẩm</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="site-body">
+    <!-- Ice Cream Icons Animation -->
+    <div class="ice-cream-field">
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 10%; left: 5%; animation-delay: 0s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 20%; left: 20%; animation-delay: 1s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 30%; left: 40%; animation-delay: 2s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 50%; left: 10%; animation-delay: 3s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 60%; left: 70%; animation-delay: 4s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 75%; left: 30%; animation-delay: 5s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 80%; left: 80%; animation-delay: 6s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 90%; left: 50%; animation-delay: 7s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 95%; left: 25%; animation-delay: 8s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 40%; left: 85%; animation-delay: 9s"
+      ></i>
+    </div>
+
+    <!-- Snowfall Effect -->
+    <div class="snowflake">❆</div>
+    <div class="snowflake" style="left: 5%">❄</div>
+    <div class="snowflake" style="left: 15%">❅</div>
+    <div class="snowflake" style="left: 25%">❆</div>
+    <div class="snowflake" style="left: 40%">❄</div>
+    <div class="snowflake" style="left: 55%">❅</div>
+    <div class="snowflake" style="left: 70%">❆</div>
+    <div class="snowflake" style="left: 85%">❄</div>
+    <div class="snowflake" style="left: 95%">❅</div>
+    <div class="snowflake" style="left: 100%">❆</div>
+    <canvas id="snow"></canvas>
+
+    <!-- Background Music -->
+    <audio
+      id="bg-music"
+      src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">Freezé</h1>
+        <nav class="site-nav">
+          <a href="./index.html" class="nav-link">Trang Chủ</a>
+          <a href="./gioithieu.html" class="nav-link">Giới Thiệu</a>
+          <a href="./sanpham.html" class="nav-link">Sản Phẩm</a>
+          <a href="./tintuc.html" class="nav-link">Tin Tức</a>
+          <a href="./dangnhap.html" class="nav-link">Đăng Nhập</a>
+          <a href="./dangky.html" class="nav-link">Đăng Ký</a>
+          <a href="./lienhe.html" class="nav-link">Liên Hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Product Section -->
+    <main>
+      <h2 class="section-title">Sản phẩm truyền thống</h2>
+      <article class="product-grid">
+        <!-- Sản phẩm 1 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Kiwi</h2>
+          <img
+            src="../assets/imageProduct/yogurt-kiwi.png"
+            alt="Sữa chua vị Kiwi"
+          />
+          <p class="product-desc">
+            Hương vị thơm ngon của trái Kiwi xanh, nổi tiếng của đất nước New
+            Zealand có trong Sữa chua vị Kiwi xanh đem đến một món nhẹ. Siêu
+            ngon và tốt cho hệ tiêu hóa.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 2 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Xoài</h2>
+          <img
+            src="../assets/imageProduct/yogurt-mango.png"
+            alt="Sữa chua vị Xoài"
+          />
+          <p class="product-desc">
+            Sữa chua xoài thích hợp cho mọi lứa tuổi, vì vậy hãy để cả gia đình
+            quây quần bên nhau cùng thưởng thức món ăn thơm ngon, bổ dưỡng này.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 3 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Dưa lưới</h2>
+          <img
+            src="../assets/imageProduct/yogurt-dualuoi.png"
+            alt="Sữa chua vị Dưa lưới"
+          />
+          <p class="product-desc">
+            Trong dưa lưới chứa rất nhiều vitamin C có tác dụng làm đẹp da hiệu
+            quả. Phụ nữ ăn sinh tố dưa lưới thường xuyên sẽ có làn da mịn màng.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 4 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Mâm xôi</h2>
+          <img
+            src="../assets/imageProduct/yogurt-mamxoi.png"
+            alt="Sữa chua vị Mâm xôi"
+          />
+          <p class="product-desc">
+            Quả mâm xôi là loại quả ăn họ hoa hồng, có nguồn gốc từ Châu Âu, Bắc
+            Á và được trồng ở các vùng ôn đới trên toàn thế giới. Có nhiều loại,
+            bao gồm đen, tím và vàng.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 5 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Dâu tây</h2>
+          <img
+            src="../assets/imageProduct/yogurt-vietquat.png"
+            alt="Sữa chua vị Dâu tây"
+          />
+          <p class="product-desc">
+            Dâu tây là một loại trái cây thân thảo có thân ngắn và các chiếc lá
+            mọc gần với nhau. Lá có nhiều gai, bề mặt lá có nhiều lông tơ và
+            kích thước lá có thể khác nhau ở từng giống.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 6 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Việt quốc</h2>
+          <img
+            src="../assets/imageProduct/yogurt-vietquat.png"
+            alt="Sữa chua vị Việt quốc"
+          />
+          <p class="product-desc">
+            Quả việt quất chứa các dưỡng chất tốt cho sức khỏe như chất xơ,
+            kali, folate, vitamin C và vitamin B6 (những chất hỗ trợ rất tốt cho
+            sức khỏe của tim).
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 7 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Bưởi</h2>
+          <img
+            src="../assets/imageProduct/yogurt-buoi.png"
+            alt="Sữa chua vị Bưởi"
+          />
+          <p class="product-desc">
+            Bưởi là một loại quả thuộc họ Cam chanh có nguồn gốc từ Đông Nam Á.
+            Bưởi tiếng Anh gọi là Pomelo, tuy nhiên nhiều từ điển ở Việt Nam lại
+            dịch thành Grapefruit.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 8 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Táo xanh</h2>
+          <img
+            src="../assets/imageProduct/yogurt-taoxanh.png"
+            alt="Sữa chua vị Táo xanh"
+          />
+          <p class="product-desc">
+            Táo xanh có hàm lượng chất xơ cao giúp tăng cường quá trình trao đổi
+            chất của cơ thể. Bên cạnh đó, chất xơ còn giúp quá trình giải độc
+            gan và hỗ trợ hệ tiêu hóa.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+
+        <!-- Sản phẩm 9 -->
+        <section class="product-card">
+          <h2 class="product-name">Sữa chua vị Dứa</h2>
+          <img
+            src="../assets/imageProduct/yogurt-dualuoi.png"
+            alt="Sữa chua vị Dứa"
+          />
+          <p>
+            Dứa có các tên gọi khác nhau là khóm, thơm, gai hoặc huyền xương.
+            Đây là một loại quả nhiệt đới. Dứa là cây bản địa của các nước Nam
+            Mỹ.
+            <a href="#">Xem chi tiết</a>
+          </p>
+
+          <div class="product-action">
+            <label>Số lượng:</label>
+            <input type="number" min="1" max="100" />
+            <button>Đặt hàng</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      © 2025 Bản quyền thuộc về FreezéVN.
+      <a href="#">Facebook</a>
+      |
+      <a href="#">Twitter</a>
+      |
+      <a href="#">Pinterest</a>
+      |
+      <a href="#">Về Đầu Trang</a>
+    </footer>
+  </body>
+
+  <script>
+    window.addEventListener("click", () => {
+      const music = document.getElementById("bg-music");
+      music.muted = false;
+      music.play();
+    });
+
+    const canvas = document.getElementById("snow");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const snowflakes = Array.from({ length: 200 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 4 + 1,
+      d: Math.random() * 0.5 + 0.5,
+    }));
+    function drawSnowflakes() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      ctx.beginPath();
+      snowflakes.forEach((flake) => {
+        ctx.moveTo(flake.x, flake.y);
+        ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2, true);
+      });
+      ctx.fill();
+      moveSnowflakes();
+    }
+    function moveSnowflakes() {
+      snowflakes.forEach((flake) => {
+        flake.y += flake.d;
+        if (flake.y > canvas.height) {
+          flake.y = 0;
+          flake.x = Math.random() * canvas.width;
+        }
+      });
+    }
+    setInterval(drawSnowflakes, 25);
+  </script>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Freezé - Liên hệ</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="site-body">
+    <!-- Ice Cream Icons Animation -->
+    <div class="ice-cream-field">
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 10%; left: 5%; animation-delay: 0s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 20%; left: 20%; animation-delay: 1s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 30%; left: 40%; animation-delay: 2s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 50%; left: 10%; animation-delay: 3s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 60%; left: 70%; animation-delay: 4s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 75%; left: 30%; animation-delay: 5s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 80%; left: 80%; animation-delay: 6s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 90%; left: 50%; animation-delay: 7s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 95%; left: 25%; animation-delay: 8s"
+      ></i>
+      <i
+        class="fas fa-ice-cream ice-cream-icon"
+        style="top: 40%; left: 85%; animation-delay: 9s"
+      ></i>
+    </div>
+
+    <!-- Snowfall Effect -->
+    <div class="snowflake">❆</div>
+    <div class="snowflake" style="left: 5%">❄</div>
+    <div class="snowflake" style="left: 15%">❅</div>
+    <div class="snowflake" style="left: 25%">❆</div>
+    <div class="snowflake" style="left: 40%">❄</div>
+    <div class="snowflake" style="left: 55%">❅</div>
+    <div class="snowflake" style="left: 70%">❆</div>
+    <div class="snowflake" style="left: 85%">❄</div>
+    <div class="snowflake" style="left: 95%">❅</div>
+    <div class="snowflake" style="left: 100%">❆</div>
+    <canvas id="snow"></canvas>
+
+    <!-- Background Music -->
+    <audio
+      id="bg-music"
+      src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">Freezé</h1>
+        <nav class="site-nav">
+          <a href="./index.html" class="nav-link">Trang Chủ</a>
+          <a href="./gioithieu.html" class="nav-link">Giới Thiệu</a>
+          <a href="./sanpham.html" class="nav-link">Sản Phẩm</a>
+          <a href="./tintuc.html" class="nav-link">Tin Tức</a>
+          <a href="./dangnhap.html" class="nav-link">Đăng Nhập</a>
+          <a href="./dangky.html" class="nav-link">Đăng Ký</a>
+          <a href="./lienhe.html" class="nav-link">Liên Hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Form liên hệ -->
+    <form
+      class="contact-form form-wrapper"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <fieldset>
+        <legend><b>Liên Hệ</b></legend>
+
+        <img src="../assets/imageProduct/dinh-vi.png" alt="Vị trí" />
+
+        <table class="form-table">
+          <tr>
+            <td>
+              <label for="hoTen"><b>Họ Tên:</b></label>
+            </td>
+            <td>
+              <input
+                class="form-input"
+                type="text"
+                id="hoTen"
+                name="hoTen"
+                placeholder="Vui lòng nhập họ tên"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="email"><b>Email:</b></label>
+            </td>
+            <td>
+              <input
+                class="form-input"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Vui lòng nhập địa chỉ email"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="chuDe"><b>Chủ Đề:</b></label>
+            </td>
+            <td>
+              <select class="form-input" id="chuDe" name="chuDe" size="1">
+                <option value="1">Vấn đề kỹ thuật</option>
+                <option value="2">Hỗ trợ khách hàng</option>
+                <option value="3">Phản hồi</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="noiDung"><b>Nội Dung:</b></label>
+            </td>
+            <td>
+              <textarea
+                class="form-input"
+                id="noiDung"
+                name="noiDung"
+                rows="7"
+                cols="50"
+                placeholder="Nội dung cần liên hệ"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input class="btn" type="submit" value="Gửi" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                class="btn"
+                type="reset"
+                value="Làm mới"
+                onclick="location.reload()"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      © 2025 Bản quyền thuộc về FreezéVN.
+      <a href="#">Facebook</a>
+      |
+      <a href="#">Twitter</a>
+      |
+      <a href="#">Pinterest</a>
+      |
+      <a href="#">Về Đầu Trang</a>
+    </footer>
+  </body>
+
+  <script>
+    window.addEventListener("click", () => {
+      const music = document.getElementById("bg-music");
+      music.muted = false;
+      music.play();
+    });
+
+    const canvas = document.getElementById("snow");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const snowflakes = Array.from({ length: 200 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 4 + 1,
+      d: Math.random() * 0.5 + 0.5,
+    }));
+    function drawSnowflakes() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      ctx.beginPath();
+      snowflakes.forEach((flake) => {
+        ctx.moveTo(flake.x, flake.y);
+        ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2, true);
+      });
+      ctx.fill();
+      moveSnowflakes();
+    }
+    function moveSnowflakes() {
+      snowflakes.forEach((flake) => {
+        flake.y += flake.d;
+        if (flake.y > canvas.height) {
+          flake.y = 0;
+          flake.x = Math.random() * canvas.width;
+        }
+      });
+    }
+    setInterval(drawSnowflakes, 25);
+  </script>
+</html>
